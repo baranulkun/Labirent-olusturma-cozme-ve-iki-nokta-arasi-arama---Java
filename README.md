@@ -3,4 +3,5 @@ Bu projede iki adet gorev verilmistir. Gorevlerden biri, bir adet robotun her se
 iki url arasında surekli olarak gecis yapılabilmesi, cekilen bu matristeki 1,2 ve 3 degerlerine sahip noktaların farklı tipte engel olarak tanımlandıgı bir gorsel elde edilmesi, bu gorselin cevresinin bir cerceve ile kaplanması, robotun bu cesitli engeller arasında yazılan algoritma dogrultusunda hedefin konumunu bilmeksizin ilerlemesi, hedef ve giris noktalarının rast gele bir sekilde belirlenmesi,
 robotun hedefe ulasma asamasının gorsellestirilmesi ve robotun gormedigi noktaların bulut seklinde kapatılması gerekmektedir. Ayrıca robotun hedefe giderken gezmis oldugu noktaların uzerinden gecmek kaidesiyle hedefe giden en kısa yolun
 gosterilmesi, toplam adım sayısının ve gecen surenin ekrana yazılması gerekmektedir. Iki gorevde de harita yapısının guncellenebilecegi bir komut ve kullanıcıya sure kaybı yasatmamak adına hızlı bitirme gorevi icin bir buton eklenmistir.
-![Ekran görüntüsü 2023-03-25 140537](https://user-images.githubusercontent.com/74157174/229217442-282fda77-1b03-455b-8462-95c690ac2239.png)
+
+＜img src="[Ekran görüntüsü 2023-03-25 140537](https://user-images.githubusercontent.com/74157174/229217442-282fda77-1b03-455b-8462-95c690ac2239.png)" width="500" height="300"＞
