@@ -4,4 +4,5 @@ iki url arasında surekli olarak gecis yapılabilmesi, cekilen bu matristeki 1,2
 robotun hedefe ulasma asamasının gorsellestirilmesi ve robotun gormedigi noktaların bulut seklinde kapatılması gerekmektedir. Ayrıca robotun hedefe giderken gezmis oldugu noktaların uzerinden gecmek kaidesiyle hedefe giden en kısa yolun
 gosterilmesi, toplam adım sayısının ve gecen surenin ekrana yazılması gerekmektedir. Iki gorevde de harita yapısının guncellenebilecegi bir komut ve kullanıcıya sure kaybı yasatmamak adına hızlı bitirme gorevi icin bir buton eklenmistir.
 
-＜img src="[Ekran görüntüsü 2023-03-25 140537](https://user-images.githubusercontent.com/74157174/229217442-282fda77-1b03-455b-8462-95c690ac2239.png)" width="500" height="300"＞
+＜img src="[sonLabirent](https://user-images.githubusercontent.com/74157174/229225827-070d8c8d-8761-4128-a6f3-fe47ecff4822.png)" width="500" height="300"＞
+
