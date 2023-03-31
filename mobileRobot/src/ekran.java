@@ -46,7 +46,7 @@ public class ekran extends JFrame {
 	final static int engel3 = 3;
 	final static int kYol = 5;
 	final static int geriYol = 4;
-	static int a = 0;
+	static int aKontrol = 0;
 	static int topYolSay;
 	static int kisaYolSay;
 	static long endTime;
@@ -280,6 +280,8 @@ public class ekran extends JFrame {
 				}
 			}
 		}
+		labirentMtrs[kisYol.firstElement().i][kisYol.firstElement().j]=6;
+		kisYol.remove(kisYol.indexOf(kisYol.firstElement()));
 		//kýsa yol çiziminde stack'e eklenip de kullanýlmamýþ elemanlarýn silinmesi
 		for (int i = 0; i < stack.search(stack.firstElement()); i++) {
 			for (int z = 0; z < kisYol.search(kisYol.firstElement()); z++) {
@@ -533,6 +535,7 @@ public class ekran extends JFrame {
 		//labirentin güncellenmesi
 		labirentGuncelle.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				aKontrol=0;
 				if (hizliBtr == true)
 					speed = 350 / boyut1;
 				repaint();
@@ -820,7 +823,7 @@ public class ekran extends JFrame {
 				kisaYolRobot.setEnabled(false);
 				if (hizliBtr == true)
 					speed = 350 / boyut1;
-				a = 0;
+				aKontrol = 0;
 				robotCoz.setEnabled(true);
 				try {
 					labirentMtrs = islemler.txtRead(path);
@@ -1107,7 +1110,7 @@ public class ekran extends JFrame {
 	public void paint(Graphics g2, int sira, int sutun) {
 		int flag1 = sira;
 		int flag = sutun;
-		if (a != 0) {
+		if (aKontrol > 1) {
 			g2.translate(70, 70);
 			Color color;
 			for (int i = -2; i < 1; i++) {
@@ -1146,14 +1149,14 @@ public class ekran extends JFrame {
 					g2.setColor(color);
 					g2.fillRect(700 / boyut1 * sutun, 700 / boyut1 * sira, 700 / boyut1, 700 / boyut1);
 					g2.setColor(Color.black);
+					if(!isLab)
 					g2.drawRect(700 / boyut1 * sutun, 700 / boyut1 * sira, 700 / boyut1, 700 / boyut1);
 					sutun = flag;
 				}
 				sira = flag1;
 			}
 		}
-
-		a = 2;
+		aKontrol++;
 	}
 
 	public void labCiz() {
@@ -1194,6 +1197,7 @@ public class ekran extends JFrame {
 				g.setColor(color);
 				g.fillRect(700 / boyut1 * sutun, 700 / boyut1 * sira, 700 / boyut1, 700 / boyut1);
 				g.setColor(Color.black);
+				if(!isLab)
 				g.drawRect(700 / boyut1 * sutun, 700 / boyut1 * sira, 700 / boyut1, 700 / boyut1);
 			}
 			if (isLab) {
